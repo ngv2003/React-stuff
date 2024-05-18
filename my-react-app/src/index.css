@@ -1,0 +1,35 @@
+.bug{
+  height: 250px;
+  width: 300px; 
+}
+.card{
+  max-width:320px;
+  border: 3px solid greenyellow;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.button{
+  background-color: hsl(133, 86%, 66%);
+  color:black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px black;
+  cursor:pointer;
+}
+
+.student{
+  height: 80px;
+  width: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  padding: 10px;
+  border: 2px solid black;
+}
+.student p{
+  margin: 0;
+}
