@@ -1,11 +1,12 @@
+import MyTeam from "./MyTeam";
 
-import MyComponent_3 from "./MyComponent_3";
-
-function App(){
-  
-  return(
-    <MyComponent_3/>
-  );  
+function App() {
+  return (
+    <div className="container">
+        <MyTeam name="Team A"/>
+        <MyTeam name="Team B"/>
+    </div>
+  );
 }
 
 export default App;

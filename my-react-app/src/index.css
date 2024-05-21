@@ -1,47 +1,93 @@
-.bug{
-  height: 250px;
-  width: 300px; 
-}
-.card{
-  max-width:320px;
-  border: 3px solid greenyellow;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px black;
-  padding: 20px;
-  margin: 10px;
+
+.container {
   text-align: center;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between; /* Optional: Adjust as needed */
+  gap: 10px; /* Optional: Adjust space between the components */
+}
+
+.team {
+  flex: 1; /* Optional: Make each component take equal width */
+  padding: 10px; /* Optional: Add some padding */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
 }
 
 
-
-.student{
-  height: 80px;
-  width: 200px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.5em;
-  padding: 10px;
-  border: 2px solid black;
-}
-.student p{
-  margin: 0;
+body{
+  background-color: hsl(0, 0%, 20%);
 }
 
-.counter{
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+h1{
+  margin-top: 5px;
+  font-size: 3rem;
+  color:rgb(248, 248, 248);
+  margin-bottom: 0;
 }
 
-.count-display{
-  font-size: 10em;
-  margin-top:0;
-  margin-bottom:50px;
-}
-
-.count-button{
-  width: 150px;
-  height: 50px;
-  font-size: 1.5em;
+button{
+  font-size:1.5rem;
   font-weight: bold;
-  
+  padding: 10px 20px;
+  color: rgb(231, 185, 106);
+  border:1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.add-button{
+  background-color:hsl(120, 47%, 54%);
+}
+.add-button:hover{
+  background-color: hsl(120, 47%, 44%);
+}
+.delete-button{
+  background-color:hsl(10, 90%, 50%);
+}
+.delete-button:hover{
+  background-color: hsl(10 ,90%, 40%);
+}
+.move-button{
+  background-color:hsl(207, 90%, 64%);
+}
+.move-button:hover{
+  background-color: hsl(207 ,90%, 54%);
+}
+.name-box{
+  margin-top: 10px;
+}
+input[type="text"]{
+  font-size: 1.3rem;
+  padding:10px;
+  border: 2px solid hsl(0, 10%, 76%);
+  border-radius:5px;
+  color: rgb(5, 5, 4)
+}
+ol{
+  padding:0;
+}
+li{
+  font-size: 1.5rem;
+  font-weight:bold;
+  background-color: hsl(0, 3%, 86%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.762);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+  .text{
+    margin-left: 20px;
+    flex:0.5;
+    text-align: left;
+  }
+  .text-1{
+    flex:1.5;
+    text-align: center;
+  }
+
+.delete-button,.move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
 }
